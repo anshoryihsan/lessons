@@ -57,6 +57,11 @@ let janjian = new Promise((resolve, reject) => {
     try {
         let result = await janjian;
         console.log(result)
+        if(!result.kelas == 18) {
+            console.log('salah')
+        }else{
+            console.log('benar')
+        }
       } catch (error) {
           console.log(error.message)
       }finally {
