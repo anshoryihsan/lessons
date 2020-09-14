@@ -1,17 +1,17 @@
-// import View from './dataDiri/components/View';
+import View from './dataDiri/components/View';
 
-// const DataDiri = ()=> {
-//     const student = {
-//         firstName: 'Tova',
-//         lastName: 'Maulana Irvan',
-//         nomor: 5
-//     }
-//     return(
-//         <View 
-//             student={student}
-//         />
-//     )
-// }
+const DataDiri = ()=> {
+    const student = {
+        firstName: 'Tova',
+        lastName: 'Maulana Irvan',
+        nomor: 5
+    }
+    return(
+        <View 
+            student={student}
+        />
+    )
+}
 
 //Destructuring Object
 // const student = {
