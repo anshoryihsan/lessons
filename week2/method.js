@@ -16,7 +16,20 @@
 // console.log()
 // object.methodTwo()
 
-let nilai = [0, 1000, 10000, 1, 2, 5]; //lebih tepat digunakan untuk pengurutan abjad
+// let nilai = [
+//     {title: 'ari'},
+//     {title: 'aji'},
+//     {title: 'arif'},
+// ];
+
+let nilai = [
+    {title: 'ari'},
+    {title: 'aji'},
+    {title: 'arif'},
+];
+
+
+//lebih tepat digunakan untuk pengurutan abjad
 
 // walaupun 7 lebih kecil daripada 1000 yang dari urutan pertama ialah 7, karena
 // nilai awalnya adalah 7 lebih besar daripada 1000
@@ -35,19 +48,19 @@ let nilai = [0, 1000, 10000, 1, 2, 5]; //lebih tepat digunakan untuk pengurutan 
     
 // })
 
-// let filter = nilai.filter((item, index) => item === 5)
+let filter = nilai.filter((item, index) => item.title == 'aji')
 
-// console.log(filter)
+console.log(filter)
 
 
-let nama = ['alya','adita','arya']
-let newVal = ['adit','pena']
+// let nama = ['alya','adita','arya']
+// let newVal = ['adit','pena']
 // nama.push(nama[0] == 'dita', ...nama)
 
 // console.log(newNama)
 // console.log(nama)
 
 
-nama.splice(1, 0, ...newVal)
+// nama.splice(1, 0, ...newVal)
 
-console.log(nama)
+// console.log(nama)
