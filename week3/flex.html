@@ -7,7 +7,25 @@
       body {
         margin: 0px;
       }
-
+      .container {
+        display: flex;
+      }
+      .item {
+        flex: 1;
+      }
+      .img {
+        width: 100%;
+      }
+      .card {
+        box-shadow: #00000033 2px 0 15px;
+        margin: 15;
+        border-radius: 10px;
+        overflow: hidden;
+        /* padding: 15 */
+      }
+      .card-description {
+        padding: 15
+      }
     </style>
   </head>
 
@@ -15,13 +33,27 @@
     <!-- flexbox -->
     <div class="container">
       <div class="item">
-        <div class="flex">
-          <p>Left Column</p>
+        <div class="card">
+          <img
+            class='img'
+            src="https://cdn.pixabay.com/photo/2020/08/25/00/48/mountains-5515324__340.jpg"
+          />
+          <div class='card-description'>
+            <h6>Pegunungan</h6>
+            <p>Gambar Pegunungan</p>
+          </div>
         </div>
       </div>
       <div class="item">
-        <div class="flex">
-          <p>Right Column</p>
+        <div class="card">
+          <img
+            class='img'
+            src="https://cdn.pixabay.com/photo/2020/08/25/00/48/mountains-5515324__340.jpg"
+          />
+          <div class='card-description'>
+            <h6>Pegunungan</h6>
+            <p>Gambar Pegunungan</p>
+          </div>
         </div>
       </div>
     </div>
