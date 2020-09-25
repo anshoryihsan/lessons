@@ -9,74 +9,84 @@
       }
       .container {
         display: grid;
-        grid-template-rows: 20px 20px;
+        grid-template-columns: auto auto auto auto ;
       }
-      .column {
-        display: inline-grid;
-        background: #0f0;
+      .item {
+        /* flex: 10; */
       }
-      .card {
-        background: #fff;
-        box-shadow: #00000022 0px 5px 10px;
+      .item .card:hover{
+        background-color: #ffffff44;
+        box-shadow: #00000022 0px 5px 20px;
       }
       .img {
         width: 100%;
+      }
+      .card {
+        box-shadow: #00000022 2px 0 15px;
+        margin: 15px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 300ms;
+        /* padding: 15 */
+      }
+      .card-description {
+        padding: 15px
       }
     </style>
   </head>
 
   <body>
-
+    <!-- grid -->
     <div class="container">
-      <div class="card">
-        <div>
+      <div class="item">
+        <div class="card">
           <img
-            class="img"
-            src="https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988__340.jpg"
+            class='img'
+            src="https://cdn.pixabay.com/photo/2020/08/25/00/48/mountains-5515324__340.jpg"
           />
-        </div>
-        <div class="desc">
-          <h6>Pegunungan</h6>
-          <p>Pegunungan Himalaya</p>
+          <div class='card-description'>
+            <h3>Pegunungan</h3>
+            <p>Gambar Pegunungan</p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div>
+      <div class="item">
+        <div class="card">
           <img
-            class="img"
-            src="https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988__340.jpg"
+            class='img'
+            src="https://cdn.pixabay.com/photo/2020/08/25/00/48/mountains-5515324__340.jpg"
           />
-        </div>
-        <div class="desc">
-          <h6>Pegunungan</h6>
-          <p>Pegunungan Himalaya</p>
+          <div class='card-description'>
+            <h3>Pegunungan</h3>
+            <p>Gambar Pegunungan</p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div>
+      <div class="item">
+        <div class="card">
           <img
-            class="img"
-            src="https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988__340.jpg"
+            class='img'
+            src="https://cdn.pixabay.com/photo/2020/08/25/00/48/mountains-5515324__340.jpg"
           />
-        </div>
-        <div class="desc">
-          <h6>Pegunungan</h6>
-          <p>Pegunungan Himalaya</p>
+          <div class='card-description'>
+            <h3>Pegunungan</h3>
+            <p>Gambar Pegunungan</p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div>
+      <div class="item">
+        <div class="card">
           <img
-            class="img"
-            src="https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988__340.jpg"
+            class='img'
+            src="https://cdn.pixabay.com/photo/2020/08/25/00/48/mountains-5515324__340.jpg"
           />
-        </div>
-        <div class="desc">
-          <h6>Pegunungan</h6>
-          <p>Pegunungan Himalaya</p>
+          <div class='card-description'>
+            <h3>Pegunungan</h3>
+            <p>Gambar Pegunungan</p>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Grid End -->
+    <!-- grid end  -->
   </body>
 </html>

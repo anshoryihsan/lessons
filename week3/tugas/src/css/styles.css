@@ -1,0 +1,83 @@
+body {
+    background-color: #fafcff !important;
+}
+
+.header-brand a {
+    color: #6379f4;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.profile-summary {
+    color: #3a3d42;
+}
+
+.profile-summary-name {
+    font-weight: bold !important;
+    font-size: 16px !important;
+}
+
+.profile-summary-phone {
+    font-weight: regular !important;
+    font-size: 12px !important;
+}
+
+.header-nav {
+    border-bottom-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    background: #fff !important;
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
+
+.sidebar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+.sidebar-item {
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 0 !important;
+}
+
+.sidebar-item.active {
+    z-index: 2;
+    color: #6379F4 !important;
+    font-weight: 500;
+    background-color: #fff !important;
+    border: 4px solid #6379F4 !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.balance {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    background-color: #6379F4 !important;
+    color: #fff
+}
+.balance-total {
+    font-size: 40px;
+    font-weight: 500;
+}
+.balance-button {
+    color: #fff;
+    background-color: #f8f9fa1c;
+}
+.balance-button:hover, .balance-button:active {
+    background-color:#00000017!important;
+}
+.activity, .history {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    background-color: #fff !important;
+    color: #fff
+}
