@@ -1,5 +1,5 @@
-import Nav from "./Nav"
+import HeaderNav from "./HeaderNav"
 
 export {
-    Nav
+    HeaderNav
 }
