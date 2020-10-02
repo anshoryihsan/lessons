@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button, Modal } from "react-bootstrap";
 import { Lists, Users } from "./components";
-
+import './src/style.css'
 const styles = {
   button: {
     backgroundColor: "#0f0",
@@ -54,7 +54,7 @@ class Home extends Component {
     console.log("onRender");
     return (
       <>
-        <div>halo: {this.state.nama}</div>
+        <div className='ini'>halo: {this.state.nama}</div>
         <Button onClick={() => this.setState({ show: true })}>
           Show Modal
         </Button>

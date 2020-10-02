@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Axios from "axios";
 import { Card, Form } from "react-bootstrap";
 import { useParams } from 'react-router-dom'
+import './src/style.css'
 class Transfer extends Component {
   state = {
     data: [],
