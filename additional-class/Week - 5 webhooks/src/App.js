@@ -18,10 +18,20 @@ const App = () => {
   React.useEffect(() => {
     Axios.get("https://jsonplaceholder.typicode.com/posts")
       .then((res) => {
-        setPosts(res.data)
-        console.log(res.data)
+        setPosts(res.data);
+        console.log(res.data);
       })
       .catch((err) => console.log(err.message));
+
+    // Axios({
+    //   method: "get",
+    //   url: "https://jsonplaceholder.typicode.com/posts",
+    // })
+    //   .then((res) => {
+    //     setPosts(res.data);
+    //     console.log(res.data);
+    //   })
+    //   .catch((err) => console.log(err.message));
   }, [onRefresh]);
   return (
     <div style={{ padding: 15 }}>
@@ -30,9 +40,8 @@ const App = () => {
       <p>{variable.test}</p>
       Title: <input onChange={(e) => setDescription(e.target.value)} />
       Deskripsi: <input onChange={(e) => (variable.test = e.target.value)} />
-
-      <button onClick={()=> setOnRefresh(!onRefresh)}>Refetch!</button>
-      <button onClick={()=> setNotRefresh(!notRefresh)}>Can't!</button>
+      <button onClick={() => setOnRefresh(!onRefresh)}>Refetch!</button>
+      <button onClick={() => setNotRefresh(!notRefresh)}>Can't!</button>
       <ShowResult
         description={description}
         test={variable.test}
