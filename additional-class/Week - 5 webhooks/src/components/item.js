@@ -9,10 +9,10 @@ const Item = (props) => {
   const { data } = props;
   return (
     <div>
-      <div>
-        ini item {props.description} <br />
-        ini test: {props.test}
-      </div>
+      {/* <div>
+        ini item {props.name} <br />
+        ini test: {props.email}
+      </div> */}
       {data == '' ? (
           <>
             <div>
@@ -36,8 +36,8 @@ const Item = (props) => {
           data.map((item) => {
             return (
               <div key={item.id} style={{ borderBottom: '1px solid gray' }}>
-                <p>{item.title}</p>
-                <p>{item.body}</p>
+                <p>{item.name}</p>
+                <p>{item.email}</p>
               </div>
             );
           })

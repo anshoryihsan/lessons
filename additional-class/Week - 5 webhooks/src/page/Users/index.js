@@ -10,19 +10,40 @@ const Users = () => {
   const [posts, setPosts] = useState([]);
   const [onRefresh, setOnRefresh] = useState(false);
   const [notRefresh, setNotRefresh] = useState(false);
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   let history = useHistory();
   let variable = {
     test: "testing variable",
   };
 
   React.useEffect(() => {
-    Axios.get("https://jsonplaceholder.typicode.com/posts")
+    Axios.get("https://zwallet-api.herokuapp.com/users")
       .then((res) => {
-        setPosts(res.data);
-        console.log(res.data);
+        setPosts(res.data.data);
+        console.log(res.data.data);
       })
       .catch((err) => console.log(err.message));
   }, [onRefresh]);
+
+  const onSubmit = () => {
+    // e.preventDefault()
+    Axios.post("https://zwallet-api.herokuapp.com/users",{
+      name: "Arungi Samudra",
+      email: email,
+      password: password,
+      pin: "777",
+      photo: "",
+      phone: "",
+      balance: 0,
+      verified: 0,
+    })
+    .then((res) => {
+      setOnRefresh(!onRefresh)
+      alert('data Berhasil di Input')
+    })
+    .catch((err) => console.log(err.message));
+  }
   return (
     <div style={{ padding: 15 }}>
       <button onClick={() => history.push("/")}>ke Home</button>
@@ -31,9 +52,12 @@ const Users = () => {
       <p>React Hooks</p>
       <p>{description}</p>
       <p>{variable.test}</p>
-      Title: <input onChange={(e) => setDescription(e.target.value)} />
-      Deskripsi: <input onChange={(e) => (variable.test = e.target.value)} />
-      <button onClick={() => setOnRefresh(!onRefresh)}>Refetch!</button>
+      <form>
+        Email: <input onChange={(e) => setEmail(e.target.value)} />
+        Password: <input onChange={(e) => setPassword(e.target.value)} />
+
+      </form>
+      <button onClick={() => onSubmit()}>Refetch!</button>
       <button onClick={() => setNotRefresh(!notRefresh)}>Can't!</button>
       <ShowResult
         description={description}
