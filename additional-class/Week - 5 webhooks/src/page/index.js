@@ -1,9 +1,15 @@
 import Home from './Home'
-import Users from './Users'
+import Users from './Userses'
+import TransferSearch from './TransferSearch'
+import TransferAmount from './TransferAmount'
+import TransferConfirmation from './TransferConfirmation'
 
 
 
 export {
     Home,
-    Users
+    Users,
+    TransferSearch,
+    TransferAmount,
+    TransferConfirmation
 }

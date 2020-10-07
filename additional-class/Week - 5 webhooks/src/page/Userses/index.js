@@ -26,10 +26,10 @@ const Users = () => {
       .catch((err) => console.log(err.message));
   }, [onRefresh]);
 
-  const onSubmit = () => {
-    // e.preventDefault()
+  const onSubmit = (e) => {
+    e.preventDefault() //gunanya e.preventDefault adalah biar tydac beralih/kereload, jangan lupa params "e"
     Axios.post("https://zwallet-api.herokuapp.com/users",{
-      name: "Arungi Samudra",
+      name: "Anjas Mara",
       email: email,
       password: password,
       pin: "777",
@@ -52,13 +52,14 @@ const Users = () => {
       <p>React Hooks</p>
       <p>{description}</p>
       <p>{variable.test}</p>
-      <form>
-        Email: <input onChange={(e) => setEmail(e.target.value)} />
-        Password: <input onChange={(e) => setPassword(e.target.value)} />
+      <form onSubmit={(e)=> onSubmit(e)}>
+        Email: <input type='email' required onChange={(e) => setEmail(e.target.value)} />
+        Password: <input type='password' required onChange={(e) => setPassword(e.target.value)} />
 
-      </form>
-      <button onClick={() => onSubmit()}>Refetch!</button>
+      <button>Post!</button>
+      {/* <button onClick={() => onSubmit()}>Post!</button> */}
       <button onClick={() => setNotRefresh(!notRefresh)}>Can't!</button>
+      </form>
       <ShowResult
         description={description}
         test={variable.test}
