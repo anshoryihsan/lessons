@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const userRoute = require("./src/Routes/Users");
+const authRoute = require("./src/Routes/Auth");
 require('dotenv').config()
 
 //midleware
@@ -12,6 +13,7 @@ app.get("/", (request, response) => {
 });
 
 app.use('/api/v1/users', userRoute)
+app.use('/api/v1/auth', authRoute)
 
 //GET METHOD
 
