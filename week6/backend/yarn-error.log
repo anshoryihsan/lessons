@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add jsonwebtekon dotenv
+
+PATH: 
+  C:\Program Files (x86)\iis express\PHP\v7.1;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\Users\irvanster\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\irvanster\AppData\Local\Programs\Python\Python38-32\;C:\Users\irvanster\AppData\Local\Microsoft\WindowsApps;C:\Users\irvanster\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\irvanster\AppData\Local\Android\Sdk\platform-tools;C:\Users\irvanster\AppData\Roaming\npm;F:\mongo\bin;C:\Program Files (x86)\heroku\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\irvanster\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\irvanster\AppData\Local\Programs\Python\Python38-32\;C:\Users\irvanster\AppData\Local\Microsoft\WindowsApps;C:\Users\irvanster\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\irvanster\AppData\Local\Android\Sdk\platform-tools;F:\mongo\bin;C:\Program Files (x86)\heroku\bin;C:\Users\irvanster\AppData\Local\Yarn\bin;c:\Users\irvanster\AppData\Local\Android\Sdktools\emulator;C:\Users\irvanster\AppData\Roaming\npm;
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  12.18.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/jsonwebtekon: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66084:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140727:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141699:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141621:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1220:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1",
+      "mysql": "^2.18.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
